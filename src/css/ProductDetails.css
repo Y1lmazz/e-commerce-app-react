@@ -1,0 +1,94 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    padding: 10px;
+    gap: 40px;
+    /* border: 3px solid black; */
+    min-height: 500px;
+}
+
+.wrapper img {
+    width: 340px;
+    border-radius: 20px;
+    border: 4px solid var(--color-primary);
+    max-height: 500px;
+}
+
+.detail-section {
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.price {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 80px;
+    font-size: xx-large;
+    color: var(--color-secondary);
+    text-align: end;
+}
+
+.title {
+    font-size: x-large;
+    color: var(--color-accent);
+}
+
+.description {
+    color: var(--color-secondary);
+    letter-spacing: .5px;
+}
+
+.counter-wrapper {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    align-items: center;
+    justify-content: end;
+    padding-right: 95px;
+    gap: 6px;
+}
+
+.counter-icons {
+    color: var(--color-accent);
+    cursor: pointer;
+    user-select: none;
+}
+
+.counter-icons:hover {
+    scale: 1.1;
+    transition: scale 0.3s ease;
+}
+
+.counted-num {
+    color: var(--color-accent);
+}
+
+.btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    padding-right: 80px;
+    margin-top: -20px;
+}
+
+.add-btn {
+    border: none;
+    font-size: 16px;
+    padding: 14px;
+    border-radius: 10px;
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+}
+
+.add-btn:hover {
+    cursor: pointer;
+    scale: 1.03;
+    transition: scale .2s ease;
+}
+
+.add-btn:active {
+    scale: 0.98;
+}

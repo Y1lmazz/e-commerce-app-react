@@ -1,0 +1,152 @@
+:root {
+  --color-primary: aliceblue;
+  --color-secondary: hsl(289, 50%, 10%);
+  --color-tertiary: hsl(349, 80%, 20%);
+  --color-accent: hsl(229, 80%, 20%);
+}
+
+.dark {
+  --color-primary: hsl(289, 50%, 10%);
+  --color-secondary: hsl(289, 50%, 90%);
+  --color-tertiary: hsl(349, 80%, 80%);
+  --color-accent: hsl(229, 80%, 80%);
+}
+
+#root {
+  background-color: var(--color-primary);
+  min-height: fit-content;
+  transition: all .4s linear;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert {
+  position: absolute;
+  top: -10%;
+  right: 40%;
+  width: 20%;
+  animation: alert 2.2s ease;
+}
+
+@keyframes alert {
+  from {
+    top: -7%;
+    right: 40%;
+  }
+
+  40% {
+    top: 2%;
+    right: 40%;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  to {
+    top: 2%;
+    right: 40%;
+    opacity: 0;
+  }
+}
+
+.drawer-container {
+  padding-top: 30px;
+}
+
+.drawer-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 520px;
+  padding: 15px 30px;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  transition: all .2s ease;
+}
+
+.drawer-img {
+  width: 50px;
+  min-width: 40px;
+  max-height: 50px;
+}
+
+.drawer-title {
+  font-size: 14px;
+  max-width: 320px;
+  min-width: 260px;
+  text-align: start;
+
+}
+
+.drawer-price {
+  font-weight: bold;
+  text-align: center;
+  font-size: 15px;
+  max-width: 40px;
+}
+
+.remove-btn {
+  margin: 0;
+  border: none;
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0.8;
+  height: 25px;
+  min-width: 25px;
+  transition: all .2s linear;
+}
+
+.remove-btn:hover {
+  scale: 1.2;
+  opacity: 1;
+}
+
+.back-btn {
+  position: absolute;
+  padding: 5px;
+  padding-top: 10px;
+  top: 2px;
+  left: 2px;
+  font-size: 50px;
+  width: 80px;
+  height: 80px;
+  color: var(--color-secondary);
+  background-color: transparent;
+  border: none;
+  box-shadow: 0 1px 4px var(--color-tertiary);
+}
+
+.back-btn:hover {
+  box-shadow: 1px 2px 4px var(--color-tertiary);
+
+}
+
+.back-btn:active {
+  box-shadow: 0 1px 4px var(--color-tertiary) inset;
+
+}

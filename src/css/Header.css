@@ -1,0 +1,83 @@
+:root {
+    --color-primary: aliceblue;
+    --color-secondary: hsl(290, 49%, 10%);
+    --color-tertiary: hsl(349, 80%, 20%);
+    --color-accent: hsl(229, 80%, 20%);
+}
+
+.dark {
+    --color-primary: hsl(289, 50%, 10%);
+    --color-secondary: aliceblue;
+    --color-tertiary: hsl(349, 80%, 80%);
+    --color-accent: hsl(229, 80%, 80%);
+}
+
+#root {
+    background-color: var(--color-primary);
+    height: 100vh;
+}
+
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    width: 60px;
+    height: 55px;
+    margin-right: 16px;
+}
+
+h2 {
+    color: var(--color-tertiary);
+}
+
+input {
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    margin-right: 10px;
+    border-bottom: 2px solid var(--color-secondary);
+    background-color: transparent;
+    color: var(--color-secondary);
+
+}
+
+.icon {
+    font-size: 26px;
+    margin-left: 10px;
+    opacity: .97;
+    cursor: pointer;
+    color: var(--color-secondary);
+}
+
+.search {
+    height: 30px;
+    border-bottom: 2px solid var(--color-secondary);
+}
+
+.logo-btn {
+    cursor: pointer;
+}
+
+.logo-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.01);
+    transition: all 0.3s ease;
+}
+
+.basket-icon {
+    width: 28px;
+    height: 32px;
+    border-bottom: 3px solid var(--color-primary);
+    transition: all .2s ease;
+}
+
+.basket-icon:hover {
+    border-bottom: 3px solid var(--color-secondary);
+    scale: 1.05;
+}
